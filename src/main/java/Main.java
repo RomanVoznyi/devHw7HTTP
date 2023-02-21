@@ -39,7 +39,7 @@ public class Main {
     public static void runDownloader(HttpStatusImageDownloader downloader, int code) {
         try {
             downloader.downloadStatusImage(code);
-            System.out.println("You can find your picture at file 'cat" + code + ".jpeg' in the 'images' folder");
+            System.out.println("You can find your picture at file 'cat" + code + ".jpeg' in the 'java' folder");
         } catch (HttpStatusException ex) {
             System.out.println("!!!Exception: " + ex.getMessage());
         }

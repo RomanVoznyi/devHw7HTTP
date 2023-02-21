@@ -7,7 +7,7 @@ import java.io.*;
 public class HttpStatusImageDownloader {
     public void downloadStatusImage(int code) throws HttpStatusException {
         HttpStatusChecker checker = new HttpStatusChecker();
-        String path = ".\\src\\main\\java\\images\\cat";
+        String path = ".\\src\\main\\java\\cat";
 
         try {
             String url = checker.getStatusImage(code);

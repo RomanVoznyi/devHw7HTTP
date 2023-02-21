@@ -2,7 +2,6 @@ package features;
 
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
-
 import java.io.IOException;
 
 public class HttpStatusChecker {
@@ -10,7 +9,7 @@ public class HttpStatusChecker {
         String url = "https://http.cat/" + code;
 
         try {
-            Jsoup.connect("https://http.cat/" + code).ignoreContentType(true).get();
+            Jsoup.connect(url).ignoreContentType(true).get();
             return url;
         } catch (HttpStatusException ex) {
             throw new HttpStatusException("Such picture does not exist", 404, url);

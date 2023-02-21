@@ -1,7 +1,6 @@
 package features;
 
 import org.jsoup.HttpStatusException;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -24,7 +23,7 @@ public class HttpImageStatusCli {
         HttpStatusImageDownloader downloader = new HttpStatusImageDownloader();
         try {
             downloader.downloadStatusImage(code);
-            System.out.println("You can find your picture at file 'cat" + code + ".jpeg' in the 'images' folder");
+            System.out.println("You can find your picture at file 'cat" + code + ".jpeg' in the 'java' folder");
         } catch (HttpStatusException ex) {
             System.out.println("There is not image for HTTP status " + code);
         }
